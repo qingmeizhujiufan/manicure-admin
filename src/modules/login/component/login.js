@@ -36,7 +36,7 @@ class Login extends React.Component {
           if(data.success){
             localStorage.token = data.token;
             localStorage.userId = data.userId;
-            this.context.router.push('/frame/dish/dishList');
+            this.context.router.push('/frame/app/consume');
           }else {
             message.error(data.backMsg);
           }  

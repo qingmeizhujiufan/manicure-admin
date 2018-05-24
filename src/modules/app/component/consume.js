@@ -34,7 +34,7 @@ const getDishListUrl = restUrl.ADDR + 'server/getDishList';
 const onlineStateChangeUrl = restUrl.ADDR + 'server/onlineStateChange';
 const delDsihUrl = restUrl.ADDR + 'server/delDish';
 
-class DishList extends React.Component {
+class Consume extends React.Component {
     constructor(props) {
         super(props);
 
@@ -176,8 +176,8 @@ class DishList extends React.Component {
     }
 }
 
-const WrappedDishList = Form.create()(DishList);
-DishList.contextTypes = {
+const WrappedDishList = Form.create()(Consume);
+Consume.contextTypes = {
     router: React.PropTypes.object
 }
 

@@ -20,7 +20,7 @@ const formItemLayout = {
     wrapperCol: { span: 12 },
 };
 
-class EditHealth extends React.Component {
+class Query extends React.Component {
     constructor(props) {
         super(props);
 
@@ -234,8 +234,8 @@ class EditHealth extends React.Component {
     }
 }
 
-const WrappedEditHealth = Form.create()(EditHealth);
-EditHealth.contextTypes = {
+const WrappedEditHealth = Form.create()(Query);
+Query.contextTypes = {
     router:React.PropTypes.object
 }
 

@@ -14,7 +14,7 @@ const formItemLayout = {
   wrapperCol: { span: 12 },
 };
 
-class AddDish extends React.Component {
+class AddVip extends React.Component {
   constructor(props) {
     super(props);
 
@@ -154,8 +154,8 @@ class AddDish extends React.Component {
   }
 }
 
-const WrappedAddDish = Form.create()(AddDish);
-AddDish.contextTypes = {  
+const WrappedAddDish = Form.create()(AddVip);
+AddVip.contextTypes = {
      router:React.PropTypes.object  
 } 
 
