@@ -81,10 +81,10 @@ class ZZLeftSide extends React.Component {
         collapsed={collapsed}
         className="left-side"
       >
-        <div className="logo"><img src={crh} /></div>
+        <div className="logo">会员管理系统</div>
         <Scrollbars style={{ width: collapsed ? 80 : 200, height: 'calc(100vh - 50px)'}}>
           <Menu 
-            theme="dark" 
+            theme="light"
             defaultSelectedKeys={[defaultSelectedKeys]} 
             mode="inline"
             defaultOpenKeys={['2', '3', '4', '5', '6', '7']}

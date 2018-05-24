@@ -61,7 +61,7 @@ class Login extends React.Component {
               <div style={{margin: '85px 0 40px', textAlign: 'center'}}>
                 <Icon type="windows" style={{fontSize: 90, color: '#fff'}} />
               </div>
-              <div style={{paddingTop: 30, textAlign: 'center', fontSize: 20, color: '#fff'}}>创以生科技管理后台</div>
+              <div style={{paddingTop: 30, textAlign: 'center', fontSize: 20, color: '#fff'}}>会员系统管理后台</div>
             </Col>
             <Col span={11} style={{height: '400px', padding: '20px 35px', backgroundColor: '#fff'}}>
               <Form onSubmit={this.handleSubmit} className="login-form">

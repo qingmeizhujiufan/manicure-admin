@@ -68,43 +68,33 @@ class AddDish extends React.Component {
     return (
       <div className="zui-content">
       	<div className="ibox-title">
-            <h5>新增菜品</h5>
+            <h5>会员注册</h5>
         </div>
         <div className="ibox-content">
 	      	<Form onSubmit={this.handleSubmit}>
 	      		<Row>
 	      			<Col span={12}>	    
 				        <FormItem
-				            label="食堂"
+				            label="用户电话"
 				            {...formItemLayout}
 				         >
 				          	{getFieldDecorator('companyId', {
-			                    rules: [{ required: false }],
-			                    initialValue: '1'
-			                })(				              
-					            <Select
-					            >
-					              <Option value={'1'}>一楼食堂</Option>
-					              <Option value={'2'}>二楼食堂</Option>
-					            </Select>
+			                    rules: [{ required: true }],
+			                })(
+                                <Input placeholder="" />
 					        )}
 				        </FormItem>
 				    </Col>
 				    <Col span={12}>
 				        <FormItem
-				            label="用餐时间"
+				            label="用户姓名"
 				            {...formItemLayout}
 				         >
 				         	{getFieldDecorator('dish_type', {
 			                    rules: [{ required: false }],
 			                    initialValue: '早餐'
 			                })(
-					            <Select
-					            >
-					              <Option value={'早餐'}>早餐</Option>
-					              <Option value={'午餐'}>午餐</Option>
-					              <Option value={'晚餐'}>晚餐</Option>
-					            </Select>
+                                <Input placeholder="" />
 					        )}
 				        </FormItem>
 				    </Col>
@@ -112,7 +102,7 @@ class AddDish extends React.Component {
 	      		<Row>
 	      			<Col span={12}>
 				        <FormItem
-				            label="菜品名称"
+				            label="充值金额"
 				            {...formItemLayout}
 				        >
 				        	{getFieldDecorator('dish_title', {
@@ -124,20 +114,13 @@ class AddDish extends React.Component {
 				    </Col>
 	      			<Col span={12}>
 	      				<FormItem
-				            label="菜品图片"
+				            label="赠送金额"
 				            {...formItemLayout}
 				          >
 				          	{getFieldDecorator('dish_img', {
 			                    rules: [{ required: true, message: '菜品图片不能为空!' }],
 			                })(
-					            <Upload
-					            	action={restUrl.UPLOAD}
-								    listType={'picture'}
-								    className='upload-list-inline'
-								    onChange={this.handleChange}
-					            >
-							    	{fileList.length >= 1 ? null : <Button><Icon type="upload" /> 上传</Button>}
-							    </Upload>
+                                <Input placeholder="" />
 							)}
 				        </FormItem>	      	
 	      			</Col>
@@ -145,13 +128,13 @@ class AddDish extends React.Component {
 			    <Row>
 				    <Col span={12}>
 				        <FormItem
-				            label="说明"
+				            label="注册人"
 				            {...formItemLayout}
 				        >
 				        	{getFieldDecorator('dish_content', {
 			                    rules: [{ required: true, message: '菜品说明不能为空!' }],
 			                })(
-				            	<Input.TextArea autosize={{minRows: 4, maxRows: 6}} />
+                                <Input placeholder="" />
 				           	)}
 				        </FormItem>
 				    </Col>
