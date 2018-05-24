@@ -90,7 +90,7 @@ class Consume extends React.Component {
         return (
             <div className="zui-content">
                 <div className="ibox-title">
-                    <h5>消费</h5>
+                    <h5>门店消费</h5>
                 </div>
                 <div className="ibox-content">
                     <Row>
